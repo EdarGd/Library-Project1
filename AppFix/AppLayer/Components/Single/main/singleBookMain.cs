@@ -8,13 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+public delegate void del_Main_To_Child(string show);
+public delegate void del_Child_To_Main(string show);
+
 namespace AppLayer.Components.Single
 {
+   
     public partial class singleBookMain : Form
     {
+        public del_Main_To_Child del_Main_To_Child;
+
+
         public singleBookMain()
         {
             InitializeComponent();
+
 
             DataAccessLayer.Entities.Book book = new DataAccessLayer.Entities.Book()
             {
@@ -42,8 +50,22 @@ namespace AppLayer.Components.Single
 
         }
 
+
+        public void set_child_to_main(string s)
+        {
+            label1.Text = s;
+        }
+        public void showBookName (string bookName)
+        {
+            MessageBox.Show(bookName);
+        }
+        // ctrl + k + s
         private void singleBookMain_Load(object sender, EventArgs e)
         {
+            del_Main_To_Child += new del_Main_To_Child(singleBook1.setCode);
+            singleBook1.del_Child_To_Main += new del_Child_To_Main(set_child_to_main);
+            del_Main_To_Child("aaaa");
+
             BusinessLogicLayer.StoredProceduresLogic.BookLogic bookLogic = new BusinessLogicLayer.StoredProceduresLogic.BookLogic();
             object resFun = bookLogic.getBooks();
             if (resFun.GetType() != typeof(DataTable))

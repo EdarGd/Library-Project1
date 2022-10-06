@@ -17,6 +17,8 @@ namespace AppLayer.Components.Single
     {
         #region Set Values to UC
         private DataAccessLayer.Entities.Book book;
+
+        public del_Child_To_Main del_Child_To_Main;
         public DataAccessLayer.Entities.Book Book
         {
             get { return book; }
@@ -57,11 +59,21 @@ namespace AppLayer.Components.Single
             btnDelete1.addEventTopictureBox1Click(showBook.Code,"Book");
             btnShow1.addEventTopictureBox1Click(showBook, "Book");
             btnUpDate1.addEventTopictureBox1Click(showBook, "Book");
+             try
+            {
+               
+            }
+            catch (Exception)
+            {
+
+                return ;
+            }
         }
 
         private void category_Click(object sender, EventArgs e)
         {
             MessageBox.Show("aaaa");
+            del_Child_To_Main("bbbb");
         }
 
 
@@ -85,6 +97,11 @@ namespace AppLayer.Components.Single
                 hover--;
                 BackColor = temp;
             }
+        }
+
+        public void setCode(string newCode)
+        {
+            code.Text = newCode;
         }
     }
 }

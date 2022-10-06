@@ -50,6 +50,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelData = new System.Windows.Forms.Panel();
+            this.singleBook1 = new AppLayer.Components.Single.singleBook();
             this.panel1.SuspendLayout();
             this.panelHeader.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -362,6 +363,15 @@
             this.panelData.Size = new System.Drawing.Size(711, 178);
             this.panelData.TabIndex = 5;
             // 
+            // singleBook1
+            // 
+            this.singleBook1.BackColor = System.Drawing.Color.Beige;
+            this.singleBook1.Book = null;
+            this.singleBook1.Location = new System.Drawing.Point(395, 340);
+            this.singleBook1.Name = "singleBook1";
+            this.singleBook1.Size = new System.Drawing.Size(750, 42);
+            this.singleBook1.TabIndex = 4;
+            // 
             // singleBookMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -369,6 +379,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1586, 426);
+            this.Controls.Add(this.singleBook1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Name = "singleBookMain";
@@ -407,5 +418,6 @@
         private Label label16;
         private Panel panel3;
         private Panel panelData;
+        private singleBook singleBook1;
     }
 }
