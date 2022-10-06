@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Files\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\Click.cur" />
+    <None Include="bin\Debug\net6.0-windows\Click.cur" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Components\Book\AddBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Components\Book\AreaBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Components\Book\DeleteBook .cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Components\Book\ShowBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Components\Book\UpdateBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

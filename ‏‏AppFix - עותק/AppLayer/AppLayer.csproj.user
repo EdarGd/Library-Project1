@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Components\Borrow\AddBorrow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Components\Borrow\AreaBorrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Components\Borrow\DeleteBorrow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Components\Borrow\ShowBorrow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Components\Borrow\UpdateBorrow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Components\ExistingCategories\AddExistingCategories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Components\ExistingCategories\AreaExistingCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Components\ExistingCategories\DeleteExistingCategories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Components\ExistingCategories\ShowExistingCategories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Components\ExistingCategories\UpdateExistingCategories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Components\User\AddUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Components\User\AreaUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Components\User\DeleteUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Components\User\ShowUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Components\User\UpdateUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UCLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="B.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormChild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="programForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SpecialComponents\specialButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
